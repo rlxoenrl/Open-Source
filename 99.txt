@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+ 
+
+int main(void)
+{
+    int i, j;
+   
+    /* 2 ~ 5단 출력 */
+    i = 2;
+    j = 1;
+    while(1)
+    {      
+        printf(" %d*%d=%2d ", i, j, i*j);
+        i++;
+       
+        /* 그 다음 줄 출력 */
+        if(i == 6)
+        {
+            printf("\n");
+            i = 2;
+            j = j + 1;
+        }
+       
+        // 9까지만 출력
+        if(j == 10)
+            break;
+    }
+    printf("\n");
+   
+    /* 6 ~ 9단 출력 */
+    i = 6;
+    j = 1;
+    while(1)
+    {      
+        printf(" %d*%d=%2d ", i, j, i*j);
+        i++;
+       
+        /* 그 다음 줄 출력 */
+        if(i == 10)
+        {
+            printf("\n");
+            i = 6;
+            j = j + 1;
+        }
+       
+        // 9까지만 출력
+        if(j == 10)
+            break;
+    }
+
+    printf("\n");
+   
+    return 0; 
+}
